@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Colors>
+  <Color name="Red" red="205" green="70" blue="90" owned="2101" used="269" enabled="True" type="perler" />
+  <Color name="Orange" red="205" green="115" blue="80" owned="1000" used="113" enabled="True" type="perler" />
+  <Color name="NeonOrange" red="250" green="120" blue="80" owned="750" used="0" enabled="False" type="perler" />
+  <Color name="Yellow" red="255" green="235" blue="55" owned="1100" used="67" enabled="True" type="perler" />
+  <Color name="Green" red="115" green="185" blue="115" owned="1000" used="144" enabled="True" type="perler" />
+  <Color name="Light Blue" red="45" green="130" blue="200" owned="1250" used="0" enabled="True" type="perler" />
+  <Color name="Dark Blue" red="35" green="80" blue="145" owned="1000" used="98" enabled="True" type="perler" />
+  <Color name="Purple" red="120" green="95" blue="155" owned="1000" used="0" enabled="True" type="perler" />
+  <Color name="White" red="255" green="255" blue="255" owned="2100" used="206" enabled="True" type="perler" />
+  <Color name="Black" red="10" green="10" blue="10" owned="6100" used="1449" enabled="True" type="perler" />
+  <Color name="Grey" red="150" green="155" blue="160" owned="2000" used="0" enabled="True" type="perler" />
+  <Color name="Dark Grey" red="95" green="100" blue="100" owned="2000" used="29" enabled="True" type="perler" />
+  <Color name="Plum" red="175" green="90" blue="160" owned="1300" used="24" enabled="True" type="perler" />
+  <Color name="Pink" red="240" green="95" blue="165" owned="1000" used="0" enabled="True" type="perler" />
+  <Color name="Brown" red="110" green="90" blue="85" owned="1700" used="56" enabled="True" type="perler" />
+  <Color name="Rust" red="165" green="90" blue="90" owned="1000" used="112" enabled="True" type="perler" />
+  <Color name="Light Brown" red="190" green="130" blue="100" owned="1100" used="88" enabled="True" type="perler" />
+  <Color name="Tan" red="205" green="165" blue="135" owned="2000" used="0" enabled="True" type="perler" />
+  <Color name="Crème" red="240" green="230" blue="195" owned="1000" used="0" enabled="True" type="perler" />
+  <Color name="Bubblegum" red="240" green="130" blue="175" owned="1000" used="0" enabled="True" type="perler" />
+  <Color name="Light Green" red="75" green="195" blue="180" owned="2000" used="0" enabled="True" type="perler" />
+  <Color name="Dark Green" red="40" green="140" blue="100" owned="1800" used="316" enabled="True" type="perler" />
+  <Color name="Peach" red="250" green="205" blue="195" owned="2000" used="0" enabled="True" type="perler" />
+  <Color name="Magenta" red="255" green="60" blue="130" owned="1300" used="0" enabled="True" type="perler" />
+  <Color name="Pastel Blue" red="90" green="160" blue="205" owned="1000" used="16" enabled="True" type="perler" />
+  <Color name="Pastel Green" red="135" green="210" blue="145" owned="1000" used="64" enabled="True" type="perler" />
+  <Color name="Pastel Lavender" red="155" green="135" blue="205" owned="1000" used="92" enabled="True" type="perler" />
+  <Color name="Pastel Yellow" red="245" green="240" blue="115" owned="1700" used="0" enabled="True" type="perler" />
+  <Color name="Cheddar" red="250" green="200" blue="85" owned="2800" used="191" enabled="True" type="perler" />
+  <Color name="Toothpaste" red="160" green="215" blue="225" owned="1000" used="30" enabled="True" type="perler" />
+  <Color name="Hot Coral" red="255" green="90" blue="115" owned="1000" used="0" enabled="True" type="perler" />
+  <Color name="Kiwi Lime" red="125" green="210" blue="80" owned="1000" used="80" enabled="True" type="perler" />
+  <Color name="Turquoise" red="105" green="160" blue="175" owned="1000" used="0" enabled="True" type="perler" />
+  <Color name="Blush" red="255" green="150" blue="160" owned="1000" used="14" enabled="True" type="perler" />
+  <Color name="Periwinkle Blue" red="85" green="125" blue="185" owned="1000" used="224" enabled="True" type="perler" />
+  <Color name="Light Pink" red="245" green="200" blue="230" owned="1000" used="61" enabled="True" type="perler" />
+  <Color name="Pearl" red="187" green="191" blue="181" owned="1000" used="0" enabled="False" type="perler" />
+  <Color name="Raspberry" red="190" green="70" blue="115" owned="1000" used="26" enabled="True" type="perler" />
+  <Color name="Neon Blue" red="23" green="91" blue="209" owned="1000" used="0" enabled="True" type="perler" />
+  <Color name="Butterscotch" red="240 " green="150" blue="110" owned="2000" used="227" enabled="True" type="perler" />
+  <Color name="Parrot Green" red="0" green="150" blue="165" owned="1000" used="0" enabled="True" type="perler" />
+  <Color name="Prickly Pear" red="175" green="200" blue="5" owned="1000" used="0" enabled="True" type="perler" />
+  <Color name="CranApple" red="120" green="5" blue="40" owned="2000" used="175" enabled="True" type="perler" />
+  <Color name="Sand" red="220" green="220" blue="175" owned="1000" used="0" enabled="True" type="perler" />
+  <Color type="hama" name="BLACK" red="0" green="0" blue="0" owned="0" used="0" enabled="True" />
+  <Color type="nabbi" name="BLACK" red="0" green="0" blue="0" owned="0" used="0" enabled="True" />
+  <Color type="hama" name="GREY" red="145" green="150" blue="155" owned="0" used="0" enabled="True" />
+  <Color type="nabbi" name="YELLOW" red="255" green="210" blue="75" owned="0" used="0" enabled="True" />
+  <Color type="hama" name="YELLOW" red="255" green="215" blue="90" owned="0" used="0" enabled="True" />
+  <Color type="hama" name="PASTEL YELLOW" red="245" green="240" blue="125" owned="0" used="0" enabled="True" />
+  <Color type="hama" name="TEDDY BEAR" red="240" green="175" blue="95" owned="0" used="0" enabled="True" />
+  <Color type="hama" name="BEIGE" red="225" green="185" blue="150" owned="0" used="0" enabled="True" />
+  <Color type="nabbi" name="SKIN" red="240" green="195" blue="150" owned="0" used="0" enabled="True" />
+  <Color type="nabbi" name="WINE RED" red="150" green="85" blue="100" owned="0" used="0" enabled="True" />
+  <Color type="hama" name="BURGRUNDY" red="115" green="75" blue="85" owned="0" used="0" enabled="True" />
+  <Color type="nabbi" name="DARK BROWN" red="90" green="85" blue="80" owned="0" used="0" enabled="True" />
+  <Color type="nabbi" name="BROWN MEDIUM" red="105" green="75" blue="80" owned="0" used="0" enabled="True" />
+  <Color type="nabbi" name="RASPBERRY" red="195" green="80" blue="115" owned="0" used="0" enabled="True" />
+  <Color type="hama" name="DARK RED" red="175" green="75" blue="85" owned="0" used="0" enabled="True" />
+  <Color type="nabbi" name="LIGHT RED" red="215" green="65" blue="85" owned="0" used="0" enabled="True" />
+  <Color type="hama" name="RED" red="200" green="65" blue="80" owned="0" used="0" enabled="True" />
+  <Color type="nabbi" name="OLD ROSE" red="255" green="120" blue="165" owned="0" used="0" enabled="True" />
+  <Color type="hama" name="FUCSIA" red="255" green="95" blue="200" owned="0" used="0" enabled="True" />
+  <Color type="hama" name="PASTEL CORAL" red="255" green="120" blue="140" owned="0" used="0" enabled="True" />
+  <Color type="hama" name="PASTEL PINK" red="230" green="135" blue="200" owned="0" used="0" enabled="True" />
+  <Color type="hama" name="PINK" red="245" green="155" blue="175" owned="0" used="0" enabled="True" />
+  <Color type="nabbi" name="BLUE" red="0" green="120" blue="210" owned="0" used="0" enabled="True" />
+  <Color type="hama" name="LIGHT BLUE" red="25" green="105" blue="180" owned="0" used="0" enabled="True" />
+  <Color type="hama" name="TURQUOISE" red="105" green="160" blue="175" owned="0" used="0" enabled="True" />
+  <Color type="hama" name="PASTEL BLUE" red="80" green="170" blue="225" owned="0" used="0" enabled="True" />
+  <Color type="nabbi" name="PASTEL BLUE" red="90" green="170" blue="235" owned="0" used="0" enabled="True" />
+  <Color type="nabbi" name="LIGHT BLUE" red="160" green="205" blue="245" owned="0" used="0" enabled="True" />
+  <Color type="hama" name="DARK GREEN" red="70" green="85" blue="90" owned="0" used="0" enabled="True" />
+  <Color type="nabbi" name="DARK GREEN" red="70" green="100" blue="90" owned="0" used="0" enabled="True" />
+  <Color type="hama" name="GREEN" red="35" green="125" blue="95" owned="0" used="0" enabled="True" />
+  <Color type="nabbi" name="GREEN" red="50" green="145" blue="100" owned="0" used="0" enabled="True" />
+  <Color type="nabbi" name="ASH GREY" red="160" green="160" blue="155" owned="0" used="0" enabled="True" />
+  <Color type="hama" name="WHITE" red="255" green="255" blue="255" owned="0" used="0" enabled="True" />
+  <Color type="nabbi" name="WHITE" red="255" green="255" blue="255" owned="0" used="0" enabled="True" />
+  <Color type="nabbi" name="LIGHT YELLOW" red="255" green="245" blue="175" owned="0" used="0" enabled="True" />
+  <Color type="hama" name="CREAM" red="250" green="230" blue="195" owned="0" used="0" enabled="True" />
+  <Color type="nabbi" name="IVORY" red="245" green="225" blue="215" owned="0" used="0" enabled="True" />
+  <Color type="nabbi" name="LIGHT GREY" red="230" green="225" blue="225" owned="0" used="0" enabled="True" />
+  <Color type="nabbi" name="BEIGE" red="185" green="160" blue="145" owned="0" used="0" enabled="True" />
+  <Color type="nabbi" name="LIGHT BROWN" red="210" green="155" blue="125" owned="0" used="0" enabled="True" />
+  <Color type="nabbi" name="BUTTERSCOTCH" red="190" green="125" blue="85" owned="0" used="0" enabled="True" />
+  <Color type="hama" name="LIGHT BROWN" red="190" green="130" blue="100" owned="0" used="0" enabled="True" />
+  <Color type="hama" name="BROWN" red="100" green="75" blue="80" owned="0" used="0" enabled="True" />
+  <Color type="hama" name="RED BROWN" red="170" green="85" blue="80" owned="0" used="0" enabled="True" />
+  <Color type="nabbi" name="BROWN" red="145" green="105" blue="100" owned="0" used="0" enabled="True" />
+  <Color type="hama" name="ORANGE" red="255" green="105" blue="95" owned="0" used="0" enabled="True" />
+  <Color type="nabbi" name="CLEAR ORANGE" red="250" green="120" blue="80" owned="0" used="0" enabled="True" />
+  <Color type="nabbi" name="PEARL ORANGE" red="225" green="160" blue="85" owned="0" used="0" enabled="True" />
+  <Color type="nabbi" name="LIGHT PINK" red="245" green="200" blue="190" owned="0" used="0" enabled="True" />
+  <Color type="hama" name="FLESH" red="240" green="170" blue="165" owned="0" used="0" enabled="True" />
+  <Color type="nabbi" name="LIGHT BROWN" red="255" green="185" blue="150" owned="0" used="0" enabled="True" />
+  <Color type="hama" name="PASTEL PURPLE" red="165" green="140" blue="205" owned="0" used="0" enabled="True" />
+  <Color type="nabbi" name="LILAC" red="200" green="185" blue="240" owned="0" used="0" enabled="True" />
+  <Color type="nabbi" name="PURPLE" red="115" green="90" blue="155" owned="0" used="0" enabled="True" />
+  <Color type="hama" name="BLUE" red="35" green="85" blue="160" owned="0" used="0" enabled="True" />
+  <Color type="hama" name="PURPLE" red="120" green="90" blue="145" owned="0" used="0" enabled="True" />
+  <Color type="nabbi" name="OLIVE" red="200" green="200" blue="120" owned="0" used="0" enabled="True" />
+  <Color type="hama" name="PASTEL GREEN" red="150" green="230" blue="160" owned="0" used="0" enabled="True" />
+  <Color type="hama" name="LIGHT GREEN" red="70" green="195" blue="165" owned="0" used="0" enabled="True" />
+  <Color type="perler" name="BRIGHT GREEN" red="115" green="185" blue="115" owned="0" used="0" enabled="True" />
+  <Color type="nabbi" name="PEARL GREEN" red="55" green="170" blue="100" owned="0" used="0" enabled="True" />
+</Colors>

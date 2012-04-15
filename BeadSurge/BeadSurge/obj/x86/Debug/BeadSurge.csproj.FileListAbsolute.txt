@@ -1,0 +1,16 @@
+c:\users\shane\documents\visual studio 2010\Projects\BeadSurge\BeadSurge\bin\Debug\BeadSurge.exe
+c:\users\shane\documents\visual studio 2010\Projects\BeadSurge\BeadSurge\bin\Debug\BeadSurge.pdb
+c:\users\shane\documents\visual studio 2010\Projects\BeadSurge\BeadSurge\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\shane\documents\visual studio 2010\Projects\BeadSurge\BeadSurge\obj\x86\Debug\BeadSurge.Form1.resources
+c:\users\shane\documents\visual studio 2010\Projects\BeadSurge\BeadSurge\obj\x86\Debug\BeadSurge.Properties.Resources.resources
+c:\users\shane\documents\visual studio 2010\Projects\BeadSurge\BeadSurge\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\users\shane\documents\visual studio 2010\Projects\BeadSurge\BeadSurge\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\users\shane\documents\visual studio 2010\Projects\BeadSurge\BeadSurge\obj\x86\Debug\BeadSurge.exe
+c:\users\shane\documents\visual studio 2010\Projects\BeadSurge\BeadSurge\obj\x86\Debug\BeadSurge.pdb
+C:\Users\Shane\Documents\Visual Studio 2010\Projects\BeadSurge\BeadSurge\obj\x86\Debug\BeadSurge.ImageColor.resources
+C:\Users\Shane\Documents\Visual Studio 2010\Projects\BeadSurge\BeadSurge\obj\x86\Debug\BeadSurge.PalletColorCombo.resources
+C:\Users\Shane\Documents\Visual Studio 2010\Projects\BeadSurge\BeadSurge\obj\x86\Debug\BeadSurge.PalletForm.resources
+C:\Users\Shane\Documents\Visual Studio 2010\Projects\BeadSurge\BeadSurge\obj\x86\Debug\BeadSurge.BeadManagement.resources
+C:\Users\Shane\Documents\Visual Studio 2010\Projects\BeadSurge\BeadSurge\obj\x86\Debug\BeadSurge.BeadSupply.resources
+C:\Users\Shane\documents\visual studio 2010\Projects\BeadSurge\BeadSurge\obj\x86\Debug\BeadSurge.Report.resources
+C:\Users\Shane\documents\visual studio 2010\Projects\BeadSurge\BeadSurge\obj\x86\Debug\BeadSurge.Import.resources
