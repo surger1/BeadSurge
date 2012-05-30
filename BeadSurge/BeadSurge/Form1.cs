@@ -22,6 +22,7 @@ namespace BeadSurge
         bool m_GridLines = true;
         bool m_FlipHorizontal = false;
         bool m_Pegs = true;
+        bool m_OriginalColor = false;
         DateTime start;
         Color IgnoreColor;
 
@@ -39,6 +40,8 @@ namespace BeadSurge
 
             cmbZoom.SelectedIndex = 1;
             m_BasePallet = new Pallet();
+            gridToolStripMenuItem.Checked = m_GridLines;
+            pegsToolStripMenuItem.Checked = m_Pegs;
         }
 
         private void importToolStripMenuItem_Click(object sender, EventArgs e)
@@ -112,7 +115,7 @@ namespace BeadSurge
         {
             if (m_OriginalImage != null)
             {
-                m_Image = new BeadImage(m_BasePallet.MorphToPallet(m_OriginalImage,IgnoreColor), Convert.ToInt32(cmbZoom.SelectedItem.ToString()),false,m_Pegs,m_GridLines,m_flashColor,IgnoreColor,m_FlipHorizontal);
+                m_Image = new BeadImage(m_BasePallet.MorphToPallet(m_OriginalImage,IgnoreColor,m_OriginalColor), Convert.ToInt32(cmbZoom.SelectedItem.ToString()),false,m_Pegs,m_GridLines,m_flashColor,IgnoreColor,m_FlipHorizontal);
                 picSprite.Image = m_Image.PostProcess;
                 start = DateTime.Now;
                 //Clipboard.SetImage(picSprite.Image); 
@@ -312,6 +315,7 @@ namespace BeadSurge
             if (m_OriginalImage != null)
             {
                 m_Pegs = !m_Pegs;
+                pegsToolStripMenuItem.Checked = m_Pegs;
                 ProcessImage();
             }
         }
@@ -321,6 +325,7 @@ namespace BeadSurge
             if (m_OriginalImage != null)
             {
                 m_GridLines = !m_GridLines;
+                gridToolStripMenuItem.Checked = m_GridLines;
                 ProcessImage();
             }
         }
@@ -374,8 +379,24 @@ namespace BeadSurge
             if (m_OriginalImage != null)
             {
                 m_FlipHorizontal = !m_FlipHorizontal;
+                flipHorizontalToolStripMenuItem.Checked = m_FlipHorizontal;
                 ProcessImage();
             }
+        }
+
+        private void originalColorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (m_OriginalImage != null)
+            {
+                m_OriginalColor = !m_OriginalColor;
+                originalColorToolStripMenuItem.Checked = m_OriginalColor;
+                ProcessImage();
+            }
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Currently Running v1.1... YAY");
         }
     }
 }

@@ -165,10 +165,14 @@ namespace BeadSurge
             return ret;
         }
 
-        public static Bitmap Reprocess(Bitmap input, Bitmap bitmap,int zoom,bool GridLines,bool Pegs, int highlight, Color IgnoreColor)
+        public static Bitmap Reprocess(Bitmap input, int zoom,bool GridLines,bool Pegs, int highlight, Color IgnoreColor)
         {
             BitmapData bmpDataIn = input.LockBits(new Rectangle(0, 0, input.Width, input.Height), ImageLockMode.ReadOnly, PixelFormat.Format32bppArgb);
-            BitmapData bmpDataOut = bitmap.LockBits(new Rectangle(0, 0, bitmap.Width, bitmap.Height), ImageLockMode.ReadWrite, PixelFormat.Format32bppArgb);
+
+            int newWidth = (((input.Width - (input.Width % 29)) / 29) + 1) * 29;
+            int newHeight = (((input.Height - (input.Height % 29)) / 29) + 1) * 29;
+            Bitmap bitmap = new Bitmap(newWidth * zoom, newHeight * zoom);
+            BitmapData bmpDataOut = bitmap.LockBits(new Rectangle(0, 0, newWidth, newHeight), ImageLockMode.ReadWrite, PixelFormat.Format32bppArgb);
             System.IntPtr Scan0In = bmpDataIn.Scan0;
             System.IntPtr Scan0Out = bmpDataOut.Scan0;
 
@@ -184,14 +188,22 @@ namespace BeadSurge
             int Black = Color.Black.ToArgb();
             int White = Color.White.ToArgb();
             int DarkGray = Color.DarkGray.ToArgb();
+            int Red = Color.Red.ToArgb();
+            int DarkRed = Color.DarkRed.ToArgb();
 
-
-            for (int x = 0; x < input.Width; ++x)
+            for (int x = 0; x < newWidth; ++x)
             {
-                for (int y = 0; y < input.Height; ++y)
+                for (int y = 0; y < newHeight; ++y)
                 {
-                    int* pIn = (int*)(scan0In + (CoordsToIndex(x, y, bmpDataIn.Stride)));
-                    
+                    int* pIn = (int*)(scan0In + (CoordsToIndex(0, 0, bmpDataIn.Stride))); ;
+                    if (x >= input.Width || y >= input.Height)
+                    {
+                        pIn[0] = ignoreColor;
+                    }
+                    else
+                    {
+                        pIn = (int*)(scan0In + (CoordsToIndex(x, y, bmpDataIn.Stride)));
+                    }
                     
                     for (int xx = 0; xx < zoom; ++xx)
                     {
@@ -206,6 +218,7 @@ namespace BeadSurge
                             if (pIn[0] == ignoreColor)
                             {
                                 int Bad = LightGray;
+                                
 
                                 if ((((y - (y % 29)) / 29) + ((x - (x % 29)) / 29)) % 2 == 0)
                                 {
@@ -222,7 +235,9 @@ namespace BeadSurge
 
                                 if (xx > (float)zoom * 0.25f && xx < (float)zoom * 0.75f && yy > (float)zoom * 0.25f && yy < (float)zoom * 0.75f && Pegs)
                                 {
-                                    Bad = DarkGray;
+
+                                        Bad = DarkGray;
+                                    
 
                                 }
 
@@ -235,10 +250,25 @@ namespace BeadSurge
                                 {
 
                                         int Bad = Black;
+                                        if ((x % 29 == 28 && xx == zoom - 1) || (y % 29 == 28 && yy == zoom - 1))
+                                        {
+                                            Bad = DarkRed;
+                                        }
+                                        else
+                                        {
+                                            Bad = Black;
+                                        }
 
                                         if ((xx + yy) % 2 == 0)
                                         {
-                                            Bad = White;
+                                            if ((x % 29 == 28 && xx == zoom - 1) || (y % 29 == 28 && yy == zoom - 1))
+                                            {
+                                                Bad = Red;
+                                            }
+                                            else
+                                            {
+                                                Bad = White;
+                                            }
 
                                         }
                                     
@@ -351,6 +381,7 @@ namespace BeadSurge
 
         public static Color PointColor(Bitmap input,int x ,int  y, int zoom)
         {
+
             BitmapData bmpData = input.LockBits(new Rectangle(0, 0, input.Width, input.Height), ImageLockMode.ReadOnly, PixelFormat.Format32bppArgb);
 
             System.IntPtr Scan0 = bmpData.Scan0;

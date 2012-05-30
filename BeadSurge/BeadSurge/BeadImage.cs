@@ -118,8 +118,8 @@ namespace BeadSurge
             {
                 m_Image.RotateFlip(RotateFlipType.RotateNoneFlipX);
             }
-            m_Highlight = hazardBitmap.Reprocess(m_Image, new Bitmap(m_Image.Width * m_Zoom, m_Image.Height * m_Zoom), m_Zoom, m_GridLines, m_Pegs, temp.ToArgb(),m_IgnoreColor);
-            m_PostProcess = hazardBitmap.Reprocess(m_Image, new Bitmap(m_Image.Width * m_Zoom, m_Image.Height * m_Zoom), m_Zoom, m_GridLines, m_Pegs, Color.Transparent.ToArgb(), m_IgnoreColor);
+            m_Highlight = hazardBitmap.Reprocess(m_Image, m_Zoom, m_GridLines, m_Pegs, temp.ToArgb(),m_IgnoreColor);
+            m_PostProcess = hazardBitmap.Reprocess(m_Image, m_Zoom, m_GridLines, m_Pegs, Color.Transparent.ToArgb(), m_IgnoreColor);
             if (m_FlipHorizontal)
             {
                 m_Image.RotateFlip(RotateFlipType.RotateNoneFlipX);
@@ -143,7 +143,7 @@ namespace BeadSurge
                    temp = (Color)m_Flash;
                 }
 
-                m_PostProcess = hazardBitmap.Reprocess(m_Image, new Bitmap(m_Image.Width * m_Zoom, m_Image.Height * m_Zoom), m_Zoom, m_GridLines, m_Pegs, temp.ToArgb(), m_IgnoreColor);
+                m_PostProcess = hazardBitmap.Reprocess(m_Image, m_Zoom, m_GridLines, m_Pegs, temp.ToArgb(), m_IgnoreColor);
                 m_Isolated = false;
             }
             if (m_FlipHorizontal)

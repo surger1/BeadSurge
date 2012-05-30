@@ -45,6 +45,8 @@
             this.imageToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.pegsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gridToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.flipHorizontalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.originalColorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.beadManagmentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.palletToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editImagePalletToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -59,7 +61,7 @@
             this.ofdImage = new System.Windows.Forms.OpenFileDialog();
             this.tmr = new System.Windows.Forms.Timer(this.components);
             this.sfdImage = new System.Windows.Forms.SaveFileDialog();
-            this.flipHorizontalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.pnlDraw.SuspendLayout();
@@ -169,7 +171,8 @@
             this.imageToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.pegsToolStripMenuItem,
             this.gridToolStripMenuItem,
-            this.flipHorizontalToolStripMenuItem});
+            this.flipHorizontalToolStripMenuItem,
+            this.originalColorToolStripMenuItem});
             this.imageToolStripMenuItem1.Name = "imageToolStripMenuItem1";
             this.imageToolStripMenuItem1.Size = new System.Drawing.Size(168, 22);
             this.imageToolStripMenuItem1.Text = "Image";
@@ -177,16 +180,30 @@
             // pegsToolStripMenuItem
             // 
             this.pegsToolStripMenuItem.Name = "pegsToolStripMenuItem";
-            this.pegsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.pegsToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.pegsToolStripMenuItem.Text = "Pegs";
             this.pegsToolStripMenuItem.Click += new System.EventHandler(this.pegsToolStripMenuItem_Click);
             // 
             // gridToolStripMenuItem
             // 
             this.gridToolStripMenuItem.Name = "gridToolStripMenuItem";
-            this.gridToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.gridToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.gridToolStripMenuItem.Text = "Grid";
             this.gridToolStripMenuItem.Click += new System.EventHandler(this.gridToolStripMenuItem_Click);
+            // 
+            // flipHorizontalToolStripMenuItem
+            // 
+            this.flipHorizontalToolStripMenuItem.Name = "flipHorizontalToolStripMenuItem";
+            this.flipHorizontalToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.flipHorizontalToolStripMenuItem.Text = "FlipHorizontal";
+            this.flipHorizontalToolStripMenuItem.Click += new System.EventHandler(this.flipHorizontalToolStripMenuItem_Click);
+            // 
+            // originalColorToolStripMenuItem
+            // 
+            this.originalColorToolStripMenuItem.Name = "originalColorToolStripMenuItem";
+            this.originalColorToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.originalColorToolStripMenuItem.Text = "Original Color";
+            this.originalColorToolStripMenuItem.Click += new System.EventHandler(this.originalColorToolStripMenuItem_Click);
             // 
             // beadManagmentToolStripMenuItem
             // 
@@ -213,7 +230,8 @@
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.beadSurgeSiteToolStripMenuItem});
+            this.beadSurgeSiteToolStripMenuItem,
+            this.aboutToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 23);
             this.helpToolStripMenuItem.Text = "Help";
@@ -289,12 +307,12 @@
             // 
             this.sfdImage.DefaultExt = "png";
             // 
-            // flipHorizontalToolStripMenuItem
+            // aboutToolStripMenuItem
             // 
-            this.flipHorizontalToolStripMenuItem.Name = "flipHorizontalToolStripMenuItem";
-            this.flipHorizontalToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.flipHorizontalToolStripMenuItem.Text = "FlipHorizontal";
-            this.flipHorizontalToolStripMenuItem.Click += new System.EventHandler(this.flipHorizontalToolStripMenuItem_Click);
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.aboutToolStripMenuItem.Text = "About";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -354,6 +372,8 @@
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem beadSurgeSiteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem flipHorizontalToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem originalColorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
     }
 }
 

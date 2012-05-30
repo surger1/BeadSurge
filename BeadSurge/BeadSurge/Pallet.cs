@@ -249,12 +249,14 @@ namespace BeadSurge
             }
         }
 
-        public Bitmap MorphToPallet(Bitmap input,Color ignore)
+        public Bitmap MorphToPallet(Bitmap input,Color ignore,bool Original)
         {
             Bitmap Output = new Bitmap(input);
 
-            Output = hazardBitmap.MorphToPallet(Output, m_FoundInts, ignore);
-            
+            if (!Original)
+            {
+                Output = hazardBitmap.MorphToPallet(Output, m_FoundInts, ignore);
+            }
             return Output;
         }
 

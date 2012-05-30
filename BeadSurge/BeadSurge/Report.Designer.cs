@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblcm = new System.Windows.Forms.Label();
+            this.lblInches = new System.Windows.Forms.Label();
+            this.lblPixels = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.lblTime = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lblCost = new System.Windows.Forms.Label();
@@ -41,10 +45,6 @@
             this.optionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exportReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sfdReport = new System.Windows.Forms.SaveFileDialog();
-            this.lblPixels = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.lblInches = new System.Windows.Forms.Label();
-            this.lblcm = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -71,6 +71,42 @@
             this.panel1.Size = new System.Drawing.Size(583, 725);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // lblcm
+            // 
+            this.lblcm.AutoSize = true;
+            this.lblcm.Location = new System.Drawing.Point(350, 78);
+            this.lblcm.Name = "lblcm";
+            this.lblcm.Size = new System.Drawing.Size(43, 13);
+            this.lblcm.TabIndex = 14;
+            this.lblcm.Text = "otototot";
+            // 
+            // lblInches
+            // 
+            this.lblInches.AutoSize = true;
+            this.lblInches.Location = new System.Drawing.Point(350, 67);
+            this.lblInches.Name = "lblInches";
+            this.lblInches.Size = new System.Drawing.Size(43, 13);
+            this.lblInches.TabIndex = 13;
+            this.lblInches.Text = "otototot";
+            // 
+            // lblPixels
+            // 
+            this.lblPixels.AutoSize = true;
+            this.lblPixels.Location = new System.Drawing.Point(350, 54);
+            this.lblPixels.Name = "lblPixels";
+            this.lblPixels.Size = new System.Drawing.Size(43, 13);
+            this.lblPixels.TabIndex = 12;
+            this.lblPixels.Text = "otototot";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(12, 54);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(61, 13);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "Dimensions";
             // 
             // lblTime
             // 
@@ -165,45 +201,13 @@
             // exportReportToolStripMenuItem
             // 
             this.exportReportToolStripMenuItem.Name = "exportReportToolStripMenuItem";
-            this.exportReportToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
+            this.exportReportToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.exportReportToolStripMenuItem.Text = "Export Report";
             this.exportReportToolStripMenuItem.Click += new System.EventHandler(this.exportReportToolStripMenuItem_Click);
             // 
-            // lblPixels
+            // sfdReport
             // 
-            this.lblPixels.AutoSize = true;
-            this.lblPixels.Location = new System.Drawing.Point(350, 54);
-            this.lblPixels.Name = "lblPixels";
-            this.lblPixels.Size = new System.Drawing.Size(43, 13);
-            this.lblPixels.TabIndex = 12;
-            this.lblPixels.Text = "otototot";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(12, 54);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(61, 13);
-            this.label5.TabIndex = 11;
-            this.label5.Text = "Dimensions";
-            // 
-            // lblInches
-            // 
-            this.lblInches.AutoSize = true;
-            this.lblInches.Location = new System.Drawing.Point(350, 67);
-            this.lblInches.Name = "lblInches";
-            this.lblInches.Size = new System.Drawing.Size(43, 13);
-            this.lblInches.TabIndex = 13;
-            this.lblInches.Text = "otototot";
-            // 
-            // lblcm
-            // 
-            this.lblcm.AutoSize = true;
-            this.lblcm.Location = new System.Drawing.Point(350, 78);
-            this.lblcm.Name = "lblcm";
-            this.lblcm.Size = new System.Drawing.Size(43, 13);
-            this.lblcm.TabIndex = 14;
-            this.lblcm.Text = "otototot";
+            this.sfdReport.FileOk += new System.ComponentModel.CancelEventHandler(this.sfdReport_FileOk);
             // 
             // Report
             // 

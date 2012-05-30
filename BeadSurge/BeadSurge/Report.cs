@@ -70,7 +70,7 @@ namespace BeadSurge
             for (int i = 0; i < m_Colours.Keys.Count; ++i)
             {
                 PalletColorCombo col = new PalletColorCombo();
-                col.Location = new System.Drawing.Point(12, 98 + (24 * i));
+                col.Location = new System.Drawing.Point(12, 128 + (24 * i));
                 col.Name = "imageColor" + i.ToString();
                 col.TabIndex = 0;
                 col.SetColor(m_Colours.Keys.ElementAt(i).Name);
@@ -81,7 +81,7 @@ namespace BeadSurge
                 panel1.Controls.Add(col);
 
                 Label lbl = new Label();
-                lbl.Location = new System.Drawing.Point(350, 106 + (24 * i));
+                lbl.Location = new System.Drawing.Point(350, 136 + (24 * i));
                 lbl.Name = "lblCol" + i.ToString();
                 lbl.TabIndex = 0;
                 lbl.Text = m_Colours.Values.ElementAt(i).ToString();
@@ -113,9 +113,17 @@ namespace BeadSurge
 
         private void exportReportToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            TextWriter tw = new StreamWriter(DateTime.Now.Day.ToString() + DateTime.Now.Month.ToString() + DateTime.Now.Year.ToString() + DateTime.Now.Millisecond.ToString()+"Report.txt");
-            tw.Write(m_Report);
-            tw.Close();
+            if (sfdReport.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                TextWriter tw = new StreamWriter(sfdReport.FileName);
+                tw.Write(m_Report);
+                tw.Close();
+            }
+        }
+
+        private void sfdReport_FileOk(object sender, CancelEventArgs e)
+        {
+
         }
     }
 }
